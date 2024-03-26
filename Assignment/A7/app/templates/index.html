@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='a1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='a4.css') }}">
+</head>
+
+<body style="background-color:white;">
+
+    <h1>A7: AIT-GPT</h1>
+
+    <form action="{{ url_for('chat') }}" method="post">
+        <label for="prompt_a5">Enter your message:</label>
+        <!-- Input box for user's message -->
+        <input type="text" id="user_message" name="user_message" required>
+
+        <button type="submit">Send</button>
+    </form>
+
+    {% if generated_response %}
+    <div class="result-container">
+        <div class="result-card chatbot-response">
+            <h2>Chatbot Response</h2>
+            <!-- Display the generated response -->
+            <p><strong>Answer: </strong></p>
+            <p>{{ generated_response['answer'] }}</p>
+            <!-- Provide relevant source documents -->
+            <p><strong> Articles:</strong></p>
+            <ul class="related-items">
+                {% for source in generated_response['unique_sources'] %}
+                <li>{{ source }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endif %}
+</body>
+
+</html>
