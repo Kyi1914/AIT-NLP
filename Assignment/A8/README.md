@@ -6,10 +6,10 @@ This is done by st124087 (Kyi Thin Nu)
 
 ## Section
 - [Overview of this assignment](#overview-of-this-assignment)
-- [ Task1: Source Discovery ](#task-1-source-discovery)
-- [ Task2: Analysis and Problem Solving](#task-2-analysis-and-problem-solving)
-- [ Task3: Chatbot Web App Development ](#task-3-chatbot-development---web-application-development)
-- [Acknowledgements](#acknowledgments)
+- [ Task1: Alpaca Dataset ](#task-1-alpaca-dataset)
+- [ Task2: Model Training](#task-2-model-training)
+- [ Task3: Model Evaluation ](#task-3-model-evaluation)
+- [ Task4: Text Generation - Web Application Development ](#task-4-text-generation---web-application-development)
 
 ## Overview of this assignment
 
