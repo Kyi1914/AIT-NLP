@@ -4,3 +4,7 @@
 Assignment/A7/models_gpt2/gpt2-span-head-few-shot-k-16-finetuned-squad-seed-0/
 Assignment/A7/vector-store/nlp_stanford/nlp.faiss
 Assignment/A7/vector-store/nlp_stanford/nlp.pkl
+*.safetensors
+*.json
+*.txt
+*.bin
