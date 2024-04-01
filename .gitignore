@@ -8,3 +8,5 @@ Assignment/A7/vector-store/nlp_stanford/nlp.pkl
 *.json
 *.txt
 *.bin
+quiz/quiz 3/.vector_cache/wiki.simple.vec
+quiz/quiz 3/.vector_cache/wiki.simple.vec.pt
